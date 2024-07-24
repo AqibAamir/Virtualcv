@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -123,7 +124,7 @@ section h2:hover {
 }
 
 
-.job, .project, .education, .volunteering {
+.job, .project, .education, .volunteering .skills {
     margin-bottom: 20px;
     background: #333; 
     padding: 15px;
@@ -132,7 +133,7 @@ section h2:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.job:hover, .project:hover, .education:hover, .volunteering:hover  {
+.job:hover, .project:hover, .education:hover, .volunteering:hover .skills {
     transform: scale(1.02);
 }
 
@@ -178,3 +179,53 @@ section h2:hover {
 .preview-container:hover img {
     transform: scale(1.1);
 }
+
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #4db6ac; 
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9em; 
+}
+
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; 
+}
+
+.skill:hover {
+    background-color: #4db6ac; 
+}
+
+.skill h3 {
+    color: #fff; 
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skill ul li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
